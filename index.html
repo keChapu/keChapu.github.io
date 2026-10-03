@@ -2,9 +2,101 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>keChapu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kechapu</title>
+<style>
+  :root {
+    --bg: #FBF4E4;
+    --card: #FFFFFF;
+    --text: #3A2E22;
+    --sub: #7A6A55;
+    --accent: #C97A3D;
+    --border: #E7D9BE;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    line-height: 1.8;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 32px 20px 56px;
+  }
+  h1 {
+    font-size: 24px;
+    margin: 0 0 8px;
+  }
+  .lead {
+    color: var(--sub);
+    margin: 0 0 32px;
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 16px;
+    margin: 32px 0 12px;
+    color: var(--sub);
+  }
+  .app-card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 18px 20px;
+    text-decoration: none;
+    color: var(--text);
+  }
+  .app-card .name {
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .app-card .tagline {
+    margin-top: 4px;
+    font-size: 14px;
+    color: var(--sub);
+  }
+  .links {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  .links a {
+    color: var(--accent);
+    text-decoration: none;
+    margin-right: 16px;
+  }
+  .links a:active {
+    opacity: 0.7;
+  }
+  footer {
+    margin-top: 48px;
+    font-size: 12px;
+    color: var(--sub);
+  }
+</style>
 </head>
 <body>
-<p>This page intentionally left blank.</p>
+  <div class="wrap">
+    <h1>kechapu</h1>
+    <p class="lead">個人でiPhoneアプリを開発しています。</p>
+
+    <h2>アプリ</h2>
+    <div class="app-card">
+      <div class="name">資産定点把握</div>
+      <div class="tagline">毎日の資産を記録して、増減をひと目で確認できるアプリです。</div>
+      <div class="links">
+        <a href="/shisanteiten/support/">サポート</a>
+        <a href="/shisanteiten/privacy/">プライバシーポリシー</a>
+      </div>
+    </div>
+
+    <h2>お問い合わせ</h2>
+    <p>不具合のご報告やご要望は、<a href="https://forms.gle/Ru9uh9VK8jC4qtHg9" style="color: var(--accent);">お問い合わせフォーム</a>からご連絡ください。</p>
+
+    <footer>&copy; kechapu</footer>
+  </div>
 </body>
 </html>
